@@ -5,7 +5,7 @@ function App() {
 
   const getMessage = async () => {
     try {
-      const response = await fetch("http://localhost:5000/api/message");
+      const response = await fetch("http://65.1.95.93:5000/api/message");
       const data = await response.json();
       setMessage(data.message);
     } catch (err) {
